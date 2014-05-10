@@ -11,11 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20140509235145) do
+=======
+ActiveRecord::Schema.define(version: 20140509234618) do
+>>>>>>> ff8ac6f7ea956dcf5d3f02ac32dec3ac44a3bc68
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+<<<<<<< HEAD
   create_table "artists", force: true do |t|
     t.text     "artist"
     t.integer  "rating"
@@ -27,6 +32,8 @@ ActiveRecord::Schema.define(version: 20140509235145) do
     t.integer  "location_id"
   end
 
+=======
+>>>>>>> ff8ac6f7ea956dcf5d3f02ac32dec3ac44a3bc68
   create_table "users", force: true do |t|
     t.float    "latitude"
     t.float    "longitude"
