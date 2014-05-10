@@ -2,7 +2,9 @@ Rails.application.routes.draw do
   resources :users
   resources :artists
 
-  root 'users#index'
+  root 'landing_page#index'
+
+  get '/locations', to: 'locations#index'
 
   get '/map' => 'users#map'
 
