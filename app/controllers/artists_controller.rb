@@ -10,6 +10,7 @@ class ArtistsController < ApplicationController
   # GET /artists/1
   # GET /artists/1.json
   def show
+    @artist = Artist.find(params[:id])
   end
 
   # GET /artists/new
@@ -61,14 +62,14 @@ class ArtistsController < ApplicationController
     end
   end
 
+  def set_artist
+    @artist = Artist.find(params[:id])
+  end
+
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_artist
-      @artist = Artist.find(params[:id])
-    end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def artist_params
-      params.require(:artist).permit(:artist, :rating, :tip, :review, :genre, :photo_url)
+      params.require(:artist).permit(:artist, :rating, :tip, :review, :description, :genre, :photo_url)
     end
 end
