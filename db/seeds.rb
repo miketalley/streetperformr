@@ -11,7 +11,7 @@ Artist.delete_all
 artist = Artist.create(artist: 'Alakazam', rating: 4, tip: 3, review: 'One of the greatest street performer I have ever seen.', genre: 'performer', photo_url: 'http://mallimages.mallfinder.com/epostCards/faneuil/alakazam.jpg')
 artist = Artist.create(artist: 'Bart Caruso', rating: 2, tip: 0, review: 'Nice sounds.!', genre: 'music', photo_url: 'http://mallimages.mallfinder.com/events/faneuil/bartc.jpg')
 artist = Artist.create(artist: 'The Ballroom Thieves', rating: 3, tip: 2, review: 'Love his sound', genre: 'music', photo_url: 'http://mallimages.mallfinder.com/epostCards/faneuil/ballroomthieves.png')
-artist = Artist.create(artist: 'Cate Great', rating: 5, tip: 5, review: 'Love the show', genre: 'performer', url: 'http://mallimages.mallfinder.com/events/faneuil/categreat.png')
+artist = Artist.create(artist: 'Cate Great', rating: 5, tip: 5, review: 'Love the show', genre: 'performer', photo_url: 'http://mallimages.mallfinder.com/events/faneuil/categreat.png')
 artist = Artist.create(artist: 'College Fund Band', rating: 1, tip: 1, review: 'Great entertainment.', genre: 'music', photo_url: 'http://mallimages.mallfinder.com/epostCards/faneuil/collegefundband.jpg')
 artist = Artist.create(artist: 'Wacky Chad', rating: 4, tip: 2, review: 'Entertaining, especially for kids!', genre: 'performer', photo_url: 'http://mallimages.mallfinder.com/epostCards/faneuil/wackychad.jpg')
 artist = Artist.create(artist: 'Ten31 Productions', rating: 4, tip: 3, review: 'So realistic.', genre: 'performer', photo_url: 'http://mallimages.mallfinder.com/epostCards/faneuil/ten31productions.jpg')
