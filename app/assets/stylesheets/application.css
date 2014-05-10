@@ -14,6 +14,7 @@
  *= require_self
  */
 
+/* ### BEGIN GLOBAL PROPERTIES ### */
 html
 {
         font-size: 62.5%;
@@ -102,7 +103,7 @@ h5
 
 img { border: 0px; }
 
-input
+input, textarea
 {
         padding: 5px;
         font-size: 1.6rem;
@@ -117,6 +118,8 @@ a
         color: #fff;
 }
 
+a:viisted {color: #fff;}
+
 ul
 {
         list-style-type: none;
@@ -128,7 +131,7 @@ ul
 {
         height: 50px;
         background-color: #19A347;
-         text-align: center;
+        text-align: center;
 }
 
 .menu img.logo
@@ -166,6 +169,12 @@ a.button:hover
 }
 
 /* ###LANDING### */
+img.logo_landing
+{
+        width: 70%;
+        max-width:300px;
+}
+
 .landing_buttons
 {
         padding: 5px 0px;
@@ -205,7 +214,7 @@ a.location
 input.search
 {
         margin: 20px 0px;
-        width: 100%;
+        width: 98%;
 }
 
 .artist_prof
@@ -219,9 +228,9 @@ input.search
 {
         float: left;
         width: 20%;
-        border-radius: 20px;
-        -webkit-border-radius: 20px;
-        -moz-border-radius: 20px;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
 }
 
 .artist_prof ul
@@ -243,8 +252,11 @@ a.load
 /* ### ARTIST PROFILE ### */
 img.prof_pic
 {
-        width: 100%;
         height: 150px;
+        border-radius: 75px;
+        -webkit-border-radius: 75px;
+        -moz-border-radius: 75px;
+        float: left;
 }
 
 a.tip
@@ -279,16 +291,9 @@ a.add_location
         border-bottom: 1px solid #ccc;
 }
 
-.review img
-{
-        float: left;
-        width: 20%;
-}
-
 .review ul
 {
-        float: right;
-        width: 70%;
+        width: 100%;
         margin: 0px;
 }
 
@@ -310,12 +315,12 @@ a.givetip
         display: inline-block;
         margin: 10px 3% 10px 0px;
         float: left;
-        opacity: .7;
+        opacity: .5;
 }
 
 a.last { margin-right: 0px;}
 
-a.active
+a.active, a.active:hover
 {
         opacity: 1;
 }
@@ -351,6 +356,13 @@ a.check img
         text-align: center;
 }
 
+.givereview textarea
+{
+        width: 100%;
+        height: 75px;
+        margin: 10px 0px;
+}
+
 a.submit
 {
         background-color: #ffcc33;
@@ -359,6 +371,32 @@ a.submit
         display: inline-block;
         color: #333;
 }
+
+.field_header
+{
+        text-align: center;
+}
+
+#field input, #field textarea
+{
+        width: 100%;
+}
+
+
+
+#field .actions input[type="submit"]
+{
+        text-decoration: none;
+        text-align: center;
+        color: #fff;
+        font-weight: bold;
+        padding: 20px 10%;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        background-color: #ffcc33;
+}
+
 
 /* ### MOBILE SCREEN ### */
 @media screen and (min-width: 0px) and (max-width: 720px)
