@@ -16,3 +16,31 @@
 //= require underscore
 //= require gmaps/google
 //= require_tree .
+
+// $('my-link').observe('click', function (event) {
+//   Gmaps.map.callback = function() {
+//           Gmaps.map.createMarker({Lat: Gmaps.map.userLocation.lat(),
+//                                   Lng: Gmaps.map.userLocation.lng(),
+//                                   rich_marker: null,
+//                                   marker_picture: ""
+//                    })
+//                 }
+//   event.preventDefault(); // Prevent link from following through to its given href
+// });
+
+// var mapStyle = [
+//   //omitted for brevity but find nice one here: http://snazzymaps.com/
+// ];
+
+// var handler = Gmaps.build('Google');
+// handler.buildMap({
+//     internal: {id: 'custom_style'},
+//     provider: {
+//       zoom:      15,
+//       center:    new google.maps.LatLng(53.385873, -1.471471),
+//       mapTypeId: google.maps.MapTypeId.ROADMAP,
+//       styles:    mapStyle
+//     }
+//   },
+//   function(){ }
+// );
