@@ -16,6 +16,17 @@ ActiveRecord::Schema.define(version: 20140510004513) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "artists", force: true do |t|
+    t.text     "artist"
+    t.integer  "rating"
+    t.integer  "tip"
+    t.text     "review"
+    t.text     "genre"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "location_id"
+  end
+
   create_table "locations", force: true do |t|
   end
 
