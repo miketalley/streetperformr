@@ -1,6 +1,6 @@
-<p id="notice"><%= notice %></p>
+<p id="notice"><%= 'Performer Location Added' %></p>
 
-<p>
+<!-- <p>
   <strong>Latitude:</strong>
   <%= @user.latitude %>
 </p>
@@ -8,11 +8,11 @@
 <p>
   <strong>Longitude:</strong>
   <%= @user.longitude %>
-</p>
+</p> -->
 
 <p>
-  <strong>Address:</strong>
-  <%= @user.address %>
+  <strong>Artist:</strong>
+  <%= @user.title %>
 </p>
 
 <p>
@@ -21,9 +21,10 @@
 </p>
 
 <p>
-  <strong>Title:</strong>
-  <%= @user.title %>
+  <strong>Address:</strong>
+  <%= @user.address %>
 </p>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
+
+<!-- <%= link_to 'Edit', edit_user_path(@user) %> | -->
 <%= link_to 'Back', users_path %>
