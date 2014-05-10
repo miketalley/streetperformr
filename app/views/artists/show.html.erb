@@ -1,7 +1,7 @@
 <div class="menu">
   <div class="container">
-    <a href="/"><%= image_tag 'back.png', class: 'back' %></a>
-    <%=image_tag 'logo.png', class: 'logo' %>
+    <%= link_to '<%= image_tag "back.png", class: "back" %>', locations_path %>
+    <%= image_tag 'logo_text.png', class: 'logo' %>
   </div>
 </div>
 <div class="container">
@@ -15,7 +15,7 @@
     </p>
   </div>
   <div class="prof_buttons">
-    <a href="" class="button tip">Tip/Review</a>
+    <%= link_to 'Tip/Review', locations_path , class: "button tip" %>
     <a href="" class="button add_location">Add Location</a>
   </div>
 

@@ -1,0 +1,26 @@
+<div class="menu">
+  <div class="container">
+    <%= link_to image_tag 'back.png', locations_path, class: 'back' %>
+    <%=image_tag 'logo.png', class: 'logo' %>
+  </div>
+</div>
+<div class="container">
+  <div class="artist_tip">
+    <%= image_tag @artist.photo_url %><h2><%= @artist.artist %></h2>
+  </div>
+  <div class="tips">
+    <h3>Leave a Tip</h3>
+    <a href="javascript:void(0)" class="button givetip active 1">$1</a>
+    <a href="javascript:void(0)" class="button givetip active 2">$2</a>
+    <a href="javascript:void(0)" class="button givetip active 5 last">$5</a>
+    <div style="clear:both"></div>
+    <input placeholder="Other dollar amount"><a href="" class="button check"><%= image_tag 'check.png' %>
+    <div style="clear:both"></div>
+  </div>
+  <div class="givereview">
+    <h3>Rate the Artist</h3>
+    <h1>* * * * *</h1><br>
+  </div>
+  <a href="" class="button submit">Submit</a>
+</div>
+

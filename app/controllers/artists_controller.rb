@@ -22,6 +22,10 @@ class ArtistsController < ApplicationController
   def edit
   end
 
+  def tip
+    @artist = Artist.find(params[:id])
+  end
+
   # POST /artists
   # POST /artists.json
   def create

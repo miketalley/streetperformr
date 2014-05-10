@@ -15,13 +15,6 @@ artist = Artist.create(artist: 'Cate Great', rating: 5, tip: 5, review: 'Love th
 artist = Artist.create(artist: 'College Fund Band', rating: 1, tip: 1, review: 'Great entertainment.', description: 'Theres a place in America where Karaoke demands adoration. And my friends, I have seen this promised land with my own eyes. I have witnessed first hand the class of performers that garner true sing-along respect: they are the Snow Birds of Fort Myers, FL.', genre: 'music', photo_url: 'http://mallimages.mallfinder.com/epostCards/faneuil/collegefundband.jpg')
 artist = Artist.create(artist: 'Wacky Chad', rating: 4, tip: 2, review: 'Entertaining, especially for kids!', description: 'Laugh until it hurts as stunt comedian Wacky Chad! rides another person on his tiny bicycle and handstands on a skateboard. Wearing his trademark orange, Wacky Chad will reach neck-straining heights on his tall unicycle and defy gravity on an air powered pogo stick. Prepare to be amazed, and if you dont like laughing, go somewhere else.', genre: 'performer', photo_url: 'http://mallimages.mallfinder.com/epostCards/faneuil/wackychad.jpg')
 artist = Artist.create(artist: 'Ten31 Productions', rating: 4, tip: 3, review: 'So realistic.', description: 'TEN31 began one evening on the banks of the Providence River during a fall Waterfire, an internationally known Rhode Island art installation. That night, Eric Auger and Joe Pari, founders of TEN31, performed as two captivating Gargoyles, their first creation. The response for the two on that crisp evening was a eureka moment and the beginning of a new dream.', genre: 'performer', photo_url: 'http://mallimages.mallfinder.com/epostCards/faneuil/ten31productions.jpg')
-# artist = Artist.create(artist: 'Tim', rating: 3, tip: 0, review: 'Love his style.', genre: 'music')
-# artist = Artist.create(artist: 'Freddy and the Steppers', rating: 4, tip: 2, review: 'Love his music.', genre: 'music')
-# artist = Artist.create(artist: 'Johnny', rating: 3, tip: 2, review: 'Great Saturday morning entertainment.', genre: 'music')
-# artist = Artist.create(artist: 'Corner Street Performers', rating: 3, tip: 0, review: 'Love the location.', genre: 'carnival')
-# artist = Artist.create(artist: 'Fifth Ave Quartest', rating: 5, tip: 4, review: 'Love his music.', genre: 'performer')
-# artist = Artist.create(artist: 'Boulevard Boys', rating: 2, tip: 2, review: 'Love his moves!', genre: 'carnival')
-
 
 
 # This file should contain all the record creation needed to seed the database with its default values.
