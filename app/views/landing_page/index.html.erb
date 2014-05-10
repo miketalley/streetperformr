@@ -1,8 +1,8 @@
-<div class="container">
+<div class="container home">
   <center><%= image_tag 'landing_logo.png', class: "logo_landing" %>
   <p>The easy way to find great street performs in your area</p></center>
   <div class="landing_buttons">
-    <a href="/users" class="button watch" >Watcher</a>
+    <%= link_to 'Watchers', "/users", class: "button watch", 'data-no-turbolink' => true %>
     <a href="#" class="button artist">Artist</a></br>
     <%= link_to 'Report a Location', new_user_path, class: "button location" %>
     <p><a href="">Learn More</a></p>

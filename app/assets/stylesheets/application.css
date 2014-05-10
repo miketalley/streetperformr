@@ -32,7 +32,7 @@ body
     min-height: 100%;
     line-height: 1.2;
     color: #fff;
-    background-color: #333;
+    background-color:#333;
 }
 
 .container
@@ -41,6 +41,13 @@ body
         max-width: 100%;
         padding: 0px 12px;
         margin: 0px auto;
+}
+
+.home
+{
+    background-image: url('http://i.imgur.com/3sfntbb.jpg');
+    background-size:250%;
+    background-position: center;
 }
 
 p
@@ -118,7 +125,9 @@ a
         color: #fff;
 }
 
-a:viisted {color: #fff;}
+a:visited {color: #fff;}
+
+a.img:hover {background-color: none;}
 
 ul
 {
@@ -134,15 +143,15 @@ ul
         text-align: center;
 }
 
-.menu img.logo
+.menu .logo
 {
         display: inline-block;
         margin-top: -10px;
-        height: 60px;
+        height: 50px;
         width: auto;
 }
 
-.menu img.back
+.menu .back
 {
         display: inline-block;
         position: absolute;
@@ -342,7 +351,7 @@ a.check img
 
 .tips input
 {
-        width: 88%;
+        width: 80%;
         float: left;
         padding: 6px 5px;
 }
@@ -377,24 +386,26 @@ a.submit
         text-align: center;
 }
 
-#field input, #field textarea
+.field input, .field textarea
 {
-        width: 100%;
+        width: 97%;
 }
 
 
 
-#field .actions input[type="submit"]
+input[type=submit]
 {
         text-decoration: none;
         text-align: center;
-        color: #fff;
+        color: #333;
         font-weight: bold;
+        width:100%;
         padding: 20px 10%;
         border-radius: 5px;
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
         background-color: #ffcc33;
+        border: 1px solid #ffcc33;
 }
 
 

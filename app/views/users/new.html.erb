@@ -1,5 +1,13 @@
-<div class="field_header">
+<div class="menu">
+  <div class="container">
+    <%= link_to image_tag("back.png"), users_path, class: 'back' %>
+    <%= image_tag 'logo_text.png', class: 'logo' %>
+  </div>
+</div>
+<div class="container">
+<div id="field_header">
   <h3>Enter Performer Location</h3>
 </div>
 
 <%= render 'form' %>
+</div>
