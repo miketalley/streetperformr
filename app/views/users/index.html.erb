@@ -4,15 +4,38 @@
 
 
 
-<h3>Nearby Performers</h3>
-
-<div style='width: 100%'>
+<div class="menu">
+  <div class="container">
+    <a href="/"><%= image_tag 'back.png', class: 'back' %></a>
+    <%=image_tag 'logo.png', class: 'logo' %>
+  </div>
+</div>
+<div class="container">
+  <div style='width: 100%'>
   <div id="map" style='width: 100%; height: 250px;'></div>
+  </div>
+    <% @artists.each do |artist| %>
+    <div class="artist_prof">
+      <% if artist.photo_url %>
+        <%= link_to image_tag(artist.photo_url), artist %>
+      <% else %>
+        <%= link_to image_tag('user_profile.jpg'), artist %>
+      <% end %>
+        <ul>
+          <li><h3><%= link_to artist.artist, artist %></h3></li>
+          <li><h4><%= artist.genre %></h4></li>
+          <li><h4>Rating: <%= artist.rating %></h4></li>
+        </ul>
+        <div style="clear: both"></div>
+    </div>
+    <% end %>
 </div>
 
-  <% if @users.count == 0 %>
-    <%= 'No Nearby Performers' %>
-  <% else %>
+
+
+
+
+<h3>Performers Table</h3>
   <table>
     <thead>
       <tr>
@@ -26,18 +49,15 @@
     <tbody>
       <% @users.each do |user| %>
         <tr>
-          <!-- <td><%= user.latitude %></td>
-          <td><%= user.longitude %></td> -->
           <td width="30%"><%= user.title %></td>
           <td width="30%"><%= user.description %></td>
           <td width="40%"><%= user.address %></td>
-          <!-- <td><%= link_to 'Show', user %></td>
+          <td><%= link_to 'Show', user %></td>
           <td><%= link_to 'Edit', edit_user_path(user) %></td>
-          <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+          <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         </tr>
       <% end %>
     </tbody>
-  <% end %>
 </table>
 
 <br>
@@ -49,25 +69,7 @@
 
 <div id="map">
 <script type="text/javascript" charset="utf-8">
-// class InfoBoxBuilder extends Gmaps.Google.Builders.Marker # inherit from base builder
-//   # override method
-//   create_infowindow: ->
-//     return null unless _.isString @args.infowindow
-
-//     boxText = document.createElement("div")
-//     boxText.setAttribute("class", 'black') #to customize
-//     boxText.innerHTML = @args.infowindow
-//     @infowindow = new InfoBox(@infobox(boxText))
-
-//     # add @bind_infowindow() for < 2.1
-
-//   infobox: (boxText)->
-//     content: boxText
-//     pixelOffset: new google.maps.Size(-140, 0)
-//     boxStyle:
-//       width: "280px"
 <!-- DONT TOUCH MAP IS WORKING -->
-// buildMap(<%=raw @hash.to_json %>)
 handler = Gmaps.build('Google');
 handler.buildMap({
   provider: {
@@ -84,29 +86,3 @@ handler.buildMap({
 <!-- DONT TOUCH MAP IS WORKING -->
 </script>
 </div>
-
-
-
-<!-- <script type="text/javascript" charset="utf-8">
-
-// // Create an array of styles.
-//   var myStyle = [
-//   {
-//     "featureType": "water",
-//     "elementType": "geometry.fill",
-//     "stylers": [
-//       { "color": "#ffe910" },
-//       { "visibility": "on" }
-//     ]
-//   },{
-//     "featureType": "landscape.natural",
-//     "stylers": [
-//       { "color": "#ff3130" }
-//     ]
-//   },{
-//   }
-// ]
-
-// </script>
-
--->

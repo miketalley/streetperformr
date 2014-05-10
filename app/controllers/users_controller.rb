@@ -4,6 +4,7 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.json
   def index
+    @artists = Artist.all
     @users = User.all
     @users = User.all
     @hash = Gmaps4rails.build_markers(@users) do |user, marker|
@@ -16,6 +17,7 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
+    @artist = Artist.find(params[:id])
   end
 
   # GET /users/new
