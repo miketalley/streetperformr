@@ -13,3 +13,211 @@
  *= require_tree .
  *= require_self
  */
+
+/* ### BEGIN GLOBAL PROPERTIES ### */
+html
+{
+  font-size: 62.5%;
+}
+
+body
+{
+  font-size: 16px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 300;
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  min-width:1004px;
+    min-height: 100%;
+    line-height: 1.2;
+    color: #fff;
+    background-color: #333;
+}
+
+.container
+{
+  width: 980px;
+  max-width: 100%;
+  padding: 0px 12px;
+  margin: 0px auto;
+}
+
+p
+{
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+h1, h2, h3, h4, h5, h6
+{
+    font-weight:normal;
+    color: #fff;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+h1
+{
+  font-size: 32px;
+  font-size: 3.6rem;
+}
+
+h2
+{
+  font-size: 28px;
+  font-size: 3.2rem;
+}
+
+h3
+{
+  font-size: 22px;
+  font-size: 2.4rem;
+}
+
+h4
+{
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+h5
+{
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-weight: normal;
+}
+
+.container
+{
+  width: 980px;
+  max-width: 100%;
+  padding: 0px 12px;
+  margin: 0px auto;
+}
+
+input
+{
+  padding: 5px;
+  font-size: 1.6rem;
+  font-size: 16px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+a
+{
+  text-decoration: none;
+  transition: .7s;
+  color: #fff;
+}
+
+a.button
+{
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 20px 10%;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+a.button:hover
+{
+  opacity: .8;
+}
+
+/* ###LANDING### */
+.landing_buttons
+{
+  padding: 5px 0px;
+  text-align: center;
+  background-color:
+}
+
+.landing_buttons a { color: #fff; }
+
+a.watch
+{
+  margin-right: 6%;
+  margin-bottom:20px;
+  padding: 50px 0%;
+  width: 46%;
+  background-color: #19A347;
+  display: inline-block;
+}
+
+a.artist
+{
+  padding: 50px 0%;
+  width: 46%;
+  background-color: #CC0000;
+  display: inline-block;
+}
+
+a.location
+{
+  width:80%;
+  background-color: #ffcc33;
+  color: #333;
+  display: block;
+}
+
+
+/* ###LOCATION### */
+input.search
+{
+  margin: 20px 0px;
+  width: 100%;
+}
+
+.artist_prof
+{
+  border-bottom: 1px solid #ccc;
+  margin: 5px 0px;
+  padding: 10px 5px;
+}
+
+.artist_prof img
+{
+  float: left;
+  width: 20%;
+
+}
+
+.artist_prof ul
+{
+  float: right;
+  width: 70%;
+  margin: 0px;
+}
+
+.artist_prof li
+{
+  list-style-type: none;
+}
+
+a.load
+{
+  text-transform: uppercase;
+}
+
+/* ### MOBILE SCREEN ### */
+@media screen and (min-width: 0px) and (max-width: 720px)
+{
+  .container
+  {
+    max-width:95%;
+    margin: 0px auto;
+    padding: 25px 2.5%;
+  }
+
+  body
+  {
+  min-width: 90%;
+  }
+}
