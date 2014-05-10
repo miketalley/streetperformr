@@ -1,29 +1,32 @@
-<p id="notice"><%= notice %></p>
+<div class="menu">
+  <div class="container">
+    <a href="/"><%= image_tag 'back.png', class: 'back' %></a>
+    <%=image_tag 'logo.png', class: 'logo' %>
+  </div>
+</div>
+<div class="container">
+  <h1><%= @artist.artist %></h1>
+  <img src="<%= @artist.photo_url  %>" >
+  <div class="rating">
+    <p> Number of Stars: <%=  @artist.rating %></p>
+  </div>
+  <div class="description">
+    <p><%= @artist.description %>
+    </p>
+  </div>
+  <div class="prof_buttons">
+    <a href="" class="button tip">Tip/Review</a>
+    <a href="" class="button add_location">Add Location</a>
+  </div>
 
-<p>
-  <strong>Artist:</strong>
-  <%= @artist.artist %>
-</p>
-
-<p>
-  <strong>Rating:</strong>
-  <%= @artist.rating %>
-</p>
-
-<p>
-  <strong>Tip:</strong>
-  <%= @artist.tip %>
-</p>
-
-<p>
-  <strong>Review:</strong>
-  <%= @artist.review %>
-</p>
-
-<p>
-  <strong>Genre:</strong>
-  <%= @artist.genre %>
-</p>
-
-<%= link_to 'Edit', edit_artist_path(@artist) %> |
-<%= link_to 'Back', artists_path %>
+  <div class="reviews">
+    <h3>Reviews</h3>
+    <div class="review">
+      <ul>
+        <li><h4>Reviewed by: Ethan Gould</h4></li>
+        <li>Thought he was cool, I really like the name</li></br>
+        <li><b>Location Seen:</b> Government Center Plaza</li>
+      </ul>
+    <div style="clear:both"></div>
+  </div>
+</div>
