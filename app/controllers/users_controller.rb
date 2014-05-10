@@ -13,20 +13,6 @@ class UsersController < ApplicationController
     end
   end
 
-  def gmaps
-    @gmapsoptions = {
-     "map_options" => {"center_latitude" => user.latitude,
-                       "center_longitude" => user.longitude,
-                       "detect_location" => false,
-                       "center_on_user" => false,
-                       "auto_adjust" => false,
-                       "auto_zoom" => true,
-                       "zoom" => 8 }
-                 }
-  end
-
-
-
   # GET /users/1
   # GET /users/1.json
   def show

@@ -28,7 +28,7 @@
         <tr>
           <!-- <td><%= user.latitude %></td>
           <td><%= user.longitude %></td> -->
-          <td width="30%"><%= link_to user.title, gmaps(:map_options => {:detect_location => true, :center_on_user => true, :auto_zoom => false, :zoom => 12, :auto_adjust => true}, :markers => {:data => @json} ) %></td>
+          <td width="30%"><%= user.title %></td>
           <td width="30%"><%= user.description %></td>
           <td width="40%"><%= user.address %></td>
           <!-- <td><%= link_to 'Show', user %></td>
@@ -67,6 +67,7 @@
 //     boxStyle:
 //       width: "280px"
 <!-- DONT TOUCH MAP IS WORKING -->
+// buildMap(<%=raw @hash.to_json %>)
 handler = Gmaps.build('Google');
 handler.buildMap({
   provider: {
