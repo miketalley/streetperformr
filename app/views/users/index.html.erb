@@ -39,6 +39,8 @@
   <table>
     <thead>
       <tr>
+        <th>Lat</th>
+        <th>Lon</th>
         <th>Artist</th>
         <th>Description</th>
         <th>Address</th>
@@ -49,9 +51,11 @@
     <tbody>
       <% @users.each do |user| %>
         <tr>
-          <td width="30%"><%= user.title %></td>
-          <td width="30%"><%= user.description %></td>
-          <td width="40%"><%= user.address %></td>
+          <td><%= user.latitude %></td>
+          <td><%= user.longitude %></td>
+          <td><%= user.title %></td>
+          <td><%= user.description %></td>
+          <td><%= user.address %></td>
           <td><%= link_to 'Show', user %></td>
           <td><%= link_to 'Edit', edit_user_path(user) %></td>
           <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
