@@ -1,5 +1,5 @@
 Artist.delete_all
-User.delete_all
+Location.delete_all
 
 artist = Artist.create(artist: 'Alakazam',
                         rating: 4,
@@ -52,37 +52,37 @@ artist = Artist.create(artist: 'Ten31 Productions',
                         photo_url: 'http://mallimages.mallfinder.com/epostCards/faneuil/ten31productions.jpg')
 
 
-user = User.create(latitude: 42.3600619,
+location = Location.create(latitude: 42.3600619,
                 longitude: -71.056103,
                 title: 'Alakazam',
                 description: 'Knots!',
                 address: 'Faneuil Hall')
-user = User.create(latitude: 42.352271,
+location = Location.create(latitude: 42.352271,
                 longitude: -71.055242,
                 title: 'Bart Caruso',
                 description: 'Dudes jammin!',
                 address: 'South Station, Boston')
-user = User.create(latitude: 42.3637009,
+location = Location.create(latitude: 42.3637009,
                 longitude: -71.0583673,
                 title: 'The Ballroom Thieves',
                 description: 'Folking awesome!',
                 address: 'Haymarket, Boston')
-user = User.create(latitude: 42.351902,
+location = Location.create(latitude: 42.351902,
                 longitude: -71.070893,
                 title: 'Cate Great',
                 description: 'She is!',
                 address: 'Arlington Station, Boston')
-user = User.create(latitude: 42.342622,
+location = Location.create(latitude: 42.342622,
                 longitude: -71.056967,
                 title: 'College Fund Band',
                 description: 'These guys can pay for college and more now with these tips!',
                 address: 'Broadway Station, Boston')
-user = User.create(latitude: 42.3493885,
+location = Location.create(latitude: 42.3493885,
                 longitude: -71.0499443,
                 title: 'Wacky Chad',
                 description: 'Just did a sick flip on his pogo stick!',
                 address: '51 Melcher St, Boston, MA')
-user = User.create(latitude: 42.3561109,
+location = Location.create(latitude: 42.3561109,
                 longitude: -71.0622582,
                 title: 'Ten31 Productions',
                 description: 'Scared the hell outta me! They are real!',

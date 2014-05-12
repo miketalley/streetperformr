@@ -8,7 +8,7 @@ Rails.application.routes.draw do
 
   get '/locations', to: 'locations#index'
 
-  resources :users
+  resources :locations
   resources :artists
 
 
