@@ -42,3 +42,7 @@ gem 'geocoder'
 gem 'gmaps4rails'
 gem 'pry-rails'
 
+group :production do
+  gem 'rails_12factor'
+end
+
