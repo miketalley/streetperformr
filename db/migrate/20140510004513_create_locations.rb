@@ -6,7 +6,7 @@ class CreateLocations < ActiveRecord::Migration
       t.string :state
       t.float :latitude
       t.float :longitude
-      t.boolean :gmaps
+      t.boolean :gmaps, default: true
       t.integer :population
       t.timestamps
     end
