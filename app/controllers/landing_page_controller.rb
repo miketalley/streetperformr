@@ -4,6 +4,4 @@ class LandingPageController < ApplicationController
 
   end
 
-
-
 end
